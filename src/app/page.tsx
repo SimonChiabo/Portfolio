@@ -2,6 +2,8 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 import { ArrowRight } from 'lucide-react';
 import { getAllProjects } from '@/lib/projects';
+import ImpactStat from '@/components/ImpactStat';
+import SyntheticDataBadge from '@/components/SyntheticDataBadge';
 
 export const metadata: Metadata = {
   openGraph: {
@@ -49,7 +51,7 @@ export default function Home() {
           {featuredProjects.map(project => (
             <Link key={project.slug} href={`/proyectos/${project.slug}`} className="group block">
               <article className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-                <div className="lg:col-span-7 relative aspect-[4/3] w-full overflow-hidden rounded-2xl bg-gray-100">
+                <div className="lg:col-span-7 relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-border/50">
                    {/* eslint-disable-next-line @next/next/no-img-element */}
                    <img
                     src={project.imagen_portada}
@@ -58,32 +60,25 @@ export default function Home() {
                   />
                   {project.datos_sinteticos && (
                     <div className="absolute top-6 left-6">
-                      <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-amber-100 text-amber-800 rounded-full text-xs font-semibold shadow-sm border border-amber-200">
-                        Datos Sintéticos
-                      </span>
+                      <SyntheticDataBadge />
                     </div>
                   )}
                 </div>
                 <div className="lg:col-span-5 flex flex-col justify-center">
                   <div className="flex gap-2 flex-wrap mb-6">
                     {project.tags.map((tag) => (
-                      <span key={tag} className="px-3 py-1 bg-gray-100 text-gray-600 text-sm font-medium rounded-full">
+                      <span key={tag} className="px-3 py-1 bg-accent/10 text-accent text-sm font-medium rounded-md">
                         {tag}
                       </span>
                     ))}
                   </div>
-                  <h3 className="text-4xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">
+                  <h3 className="font-heading text-4xl font-bold text-foreground mb-4 group-hover:text-accent transition-colors">
                     {project.titulo}
                   </h3>
-                  <p className="text-xl text-gray-600 mb-8 leading-relaxed">{project.problema}</p>
+                  <p className="text-xl text-foreground/70 mb-8 leading-relaxed">{project.problema}</p>
                   
-                  <div className="border-t border-gray-200 pt-8">
-                     <span className="text-sm font-bold tracking-wider text-gray-500 uppercase mb-2 block">
-                        Impacto
-                      </span>
-                      <span className="font-black text-gray-900 tracking-tight leading-none text-4xl md:text-5xl">
-                        {project.cifra_impacto}
-                      </span>
+                  <div className="border-t border-border pt-8">
+                     <ImpactStat value={project.cifra_impacto} size="lg" />
                   </div>
                 </div>
               </article>
