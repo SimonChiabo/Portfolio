@@ -27,7 +27,7 @@ export default function SobreMiPage() {
         <section className="mb-12">
           <h2>Formación</h2>
           <p>
-            Tengo una base sólida en ciencias económicas gracias a mis estudios avanzados en Contaduría Pública en la Universidad Nacional de Córdoba. Tras decidir profundizar en el mundo tecnológico, completé el <strong>career path de Python Developer en Codecademy</strong>. 
+            Tengo una base sólida en ciencias económicas gracias a mis estudios avanzados en Contaduría Pública en la Universidad Nacional de Córdoba {/* TODO: [Simón: si querés cuantificar esto, ej. 'aprobadas ~X de Y materias'] */}. Tras decidir profundizar en el mundo tecnológico, completé <strong>Data Science — Python, SQL y análisis de datos (Codecademy, certificado enero 2023)</strong>. 
           </p>
           <p>
             Actualmente, me encuentro cursando la especialidad de <strong>Data Scientist</strong> en la misma plataforma, complementando mi perfil con fundamentos de Data Engineering y desarrollo Full Stack para tener una visión integral del ciclo de vida de los datos y el desarrollo de producto.
@@ -40,7 +40,7 @@ export default function SobreMiPage() {
             Mi stack ha evolucionado desde herramientas tradicionales de análisis (Excel, SQL, Python, Pandas, NumPy) hacia un ecosistema más robusto de automatización y despliegue.
           </p>
           <p>
-            Recientemente me he enfocado en integrar APIs, construir backends con <strong>FastAPI</strong>, orquestar flujos de trabajo con <strong>n8n</strong>, y desplegar servicios utilizando <strong>Docker</strong>, <strong>Cloudflare</strong> y <strong>Vercel</strong>. Para la visualización y análisis de inteligencia de negocio, utilizo plataformas como <strong>Metabase</strong>.
+            Más recientemente vengo incorporando herramientas de automatización y despliegue —integración de APIs, backends con <strong>FastAPI</strong>, orquestación de flujos con <strong>n8n</strong>, y despliegue con <strong>Docker</strong>, <strong>Cloudflare</strong> y <strong>Vercel</strong>— que iré demostrando en los proyectos que sumo a este portfolio. Para la visualización y análisis de inteligencia de negocio, utilizo herramientas de Business Intelligence <strong>[VERIFICAR: Power BI / Metabase — Simón confirmar cuál(es) usar]</strong>.
           </p>
         </section>
 

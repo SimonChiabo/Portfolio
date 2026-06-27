@@ -3,7 +3,7 @@ titulo: "Análisis y Optimización de Costos de Energía"
 slug: "analisis-costos-energia"
 orden: 1
 problema: "Derroche estacional de calefacción en 200 apartamentos turísticos"
-cifra_impacto: "~20% de ahorro real en combustible"
+cifra_impacto: "~20% de ahorro en combustible"
 tags: ["Análisis de datos", "Modelado financiero", "ROI", "Python"]
 repo_url: "https://github.com/SimonChiabo/Analisis_Costos_Energia"
 notebook_url: "https://github.com/SimonChiabo/Analisis_Costos_Energia"
@@ -14,11 +14,11 @@ destacado: true
 
 ## Problema de negocio
 
-El complejo de 200 apartamentos turísticos en zona de montaña presentaba sobrecostos operativos críticos durante la temporada de invierno. A través de auditorías en campo, detecté que una porción significativa de los huéspedes dejaba los sistemas de calefacción encendidos a máxima capacidad al salir durante el día. Este patrón de derroche continuo e injustificado castigaba directamente los márgenes operativos de la compañía debido al alto precio del combustible para las calderas (gasoil a 1.15 €/litro). El objetivo de mi análisis fue evaluar la viabilidad financiera de una solución estructural —la instalación de interruptores de tarjeta para cortar el suministro de climatización en ausencia del huésped— y justificar la inversión demostrando empíricamente su rentabilidad y el riesgo nulo para la operación.
+El complejo de 200 apartamentos turísticos en zona de montaña presentaba sobrecostos operativos críticos durante la temporada de invierno. A través de auditorías en campo, detecté que una porción significativa de los huéspedes dejaba los sistemas de calefacción encendidos a máxima capacidad al salir durante el día. Este patrón de derroche continuo e injustificado castigaba directamente los márgenes operativos de la compañía debido al alto precio del combustible para las calderas (gasoil a 1.15 €/litro). El objetivo de mi análisis fue evaluar la viabilidad financiera de una solución estructural —la instalación de interruptores de tarjeta para cortar el suministro de climatización en ausencia del huésped— y justificar la inversión demostrando empíricamente su rentabilidad y acotando el riesgo mediante un análisis de sensibilidad.
 
 ## Datos y metodología
 
-Para proteger la confidencialidad operativa de la empresa, este portafolio reconstruye el caso real utilizando datasets sintéticos. Generé un volumen de datos equivalente a 48 meses de operación continua para las 200 unidades (36 meses de histórico y 12 meses optimizados post-intervención).
+El caso de negocio, el diagnóstico y la intervención provienen de una situación real en la que trabajé. Para proteger la confidencialidad de la empresa, los datos que se muestran acá son una reconstrucción sintética que reproduce la dinámica del caso original, no datos reales del cliente. Generé un volumen de datos equivalente a 48 meses de operación continua para las 200 unidades (36 meses de histórico y 12 meses optimizados post-intervención).
 
 Mi enfoque analítico no se basó en reducir artificialmente el consumo global, sino en modelar el comportamiento humano: construí curvas de demanda con fuerte estacionalidad y les superpuse una distribución probabilística de picos de derroche. En el despliegue físico real, la instalación de las tarjetas logró reducir el consumo total en aproximadamente un 20%. Utilicé ese porcentaje duro de campo como ancla para calibrar la simulación, asegurando que la reducción volumétrica en el dataset provenía única y exclusivamente de la eliminación de los picos anómalos, dotando al modelo financiero de un realismo estadístico absoluto.
 
@@ -38,7 +38,7 @@ Para garantizar la robustez técnica del proyecto y adelantándome a las objecio
 
 ## Qué encontré / impacto
 
-El modelado financiero demostró que corregir el comportamiento de derroche mediante tecnología pasiva resulta en un caso de negocio extraordinariamente líquido y rentable. Los resultados finales de la simulación arrojaron:
+El modelado financiero demostró que corregir el comportamiento de derroche mediante tecnología pasiva resulta en un caso de negocio extraordinariamente líquido y rentable. El ahorro de ~20% sobre la línea de combustible/calefacción representó aproximadamente un 3% de reducción del gasto operativo total de la operación. Los resultados finales de la simulación arrojaron:
 
 - **Reducción neta**: Una caída del 20.26% en el volumen anual, pasando de 345,796 litros (histórico) a 275,745 litros (optimizado).
 - **Ahorro Operativo (OPEX)**: Una liberación de flujo de caja de 80,557.78 € anuales.

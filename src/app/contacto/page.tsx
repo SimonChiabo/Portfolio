@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { Mail, FileDown } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export const metadata: Metadata = {
@@ -59,19 +59,7 @@ export default function ContactoPage() {
           </div>
         </a>
 
-        <a 
-          href="/cv.pdf" 
-          download
-          className="flex items-center gap-4 p-6 bg-gray-50 border border-gray-200 rounded-xl hover:bg-black hover:text-white hover:border-black transition-all mt-4 group"
-        >
-          <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-black">
-            <FileDown size={24} />
-          </div>
-          <div>
-            <h2 className="text-lg font-bold transition-colors">Descargar CV</h2>
-            <p className="opacity-80 transition-colors">Versión en PDF (TODO)</p>
-          </div>
-        </a>
+
       </div>
     </div>
   );

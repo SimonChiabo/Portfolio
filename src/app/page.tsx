@@ -8,10 +8,15 @@ import SyntheticDataBadge from '@/components/SyntheticDataBadge';
 
 export const metadata: Metadata = {
   openGraph: {
+    title: 'Simón Chiabo | Analista de Datos',
+    description: 'Portfolio profesional de Simón Chiabo, enfocado en análisis de datos, automatización y Machine Learning.',
     images: ['/proyectos/analisis-costos-energia/portada.png'], // TODO: Cambiar por una imagen real tuya o del sitio
   },
   twitter: {
     card: 'summary_large_image',
+    title: 'Simón Chiabo | Analista de Datos',
+    description: 'Portfolio profesional de Simón Chiabo, enfocado en análisis de datos, automatización y Machine Learning.',
+    images: ['/proyectos/analisis-costos-energia/portada.png'],
   },
 };
 
