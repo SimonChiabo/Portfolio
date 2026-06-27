@@ -7,10 +7,10 @@ export const metadata: Metadata = {
 
 export default function SobreMiPage() {
   return (
-    <div className="container mx-auto px-4 py-20 max-w-3xl">
+    <div className="container mx-auto px-4 py-32 max-w-3xl">
       <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-12">Sobre Mí</h1>
       
-      <div className="prose prose-lg prose-blue">
+      <div className="prose prose-lg prose-stone">
         <section className="mb-12">
           <h2>De dónde vengo y hacia dónde voy</h2>
           <p>

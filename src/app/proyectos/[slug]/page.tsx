@@ -40,23 +40,21 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
   const { frontmatter, content } = project;
 
   return (
-    <article className="pb-24">
-      {/* Hero Section */}
-      <header className="bg-gray-50 border-b border-gray-200 pt-16 pb-20">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <Link href="/proyectos" className="inline-flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-black mb-8 transition-colors">
-            <ArrowLeft size={16} /> Volver a proyectos
-          </Link>
+    <article className="container mx-auto px-4 py-32 max-w-4xl">
+      <header className="mb-12">
+        <Link href="/proyectos" className="inline-flex items-center gap-2 text-foreground/50 hover:text-foreground mb-8 transition-colors">
+          <ArrowLeft size={20} /> Volver a proyectos
+        </Link>
           
           <div className="flex gap-2 flex-wrap mb-6">
             {frontmatter.tags.map((tag) => (
-              <span key={tag} className="px-3 py-1 bg-white border border-gray-200 text-gray-600 text-sm font-medium rounded-full">
+              <span key={tag} className="px-3 py-1 bg-accent/10 text-accent text-sm font-medium rounded-md">
                 {tag}
               </span>
             ))}
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-gray-900 mb-8 leading-tight">
+          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-foreground mb-8 leading-tight">
             {frontmatter.titulo}
           </h1>
 
@@ -70,22 +68,18 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
             )}
           </div>
 
-          <div className="flex flex-wrap gap-4">
+          <div className="flex items-center gap-3">
             {frontmatter.repo_url && (
-              <a href={frontmatter.repo_url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 bg-black text-white text-sm font-medium rounded-lg hover:bg-gray-800 transition-colors">
+              <a href={frontmatter.repo_url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 bg-accent text-white text-sm font-medium rounded-xl hover:bg-accent-hover transition-colors shadow-sm">
                 <FaGithub size={18} /> Ver Repositorio
               </a>
             )}
 
           </div>
-        </div>
       </header>
 
-      {/* Content */}
-      <div className="container mx-auto px-4 max-w-3xl mt-16">
-        <div className="prose prose-lg prose-blue mx-auto">
-          <MDXRemote source={content} />
-        </div>
+      <div className="prose prose-lg prose-stone max-w-none">
+        <MDXRemote source={content} />
       </div>
     </article>
   );

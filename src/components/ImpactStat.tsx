@@ -7,10 +7,10 @@ export default function ImpactStat({ value, size = 'default' }: { value: string,
 
   return (
     <div className="flex flex-col">
-      <span className="text-xs font-bold tracking-wider text-gray-500 uppercase mb-1">
+      <span className="text-xs font-bold tracking-wider text-accent uppercase mb-1">
         Impacto
       </span>
-      <span className={`font-black text-gray-900 tracking-tight leading-none ${sizeClasses[size]}`}>
+      <span className={`font-heading font-black text-foreground tracking-tight leading-none ${sizeClasses[size]}`}>
         {value}
       </span>
     </div>

@@ -17,10 +17,10 @@ export default function ProyectosPage() {
   const projects = getAllProjects();
 
   return (
-    <div className="container mx-auto px-4 py-20">
+    <div className="container mx-auto px-4 py-32">
       <header className="max-w-3xl mb-16">
-        <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-6">Proyectos</h1>
-        <p className="text-xl text-gray-600">
+        <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4">Proyectos</h1>
+        <p className="text-xl text-foreground/70 mb-12 max-w-2xl">
           Casos de estudio detallados donde aplico análisis de datos para resolver problemas de negocio reales.
         </p>
       </header>
