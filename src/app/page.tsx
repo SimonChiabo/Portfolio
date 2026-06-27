@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Metadata } from 'next';
 import { ArrowRight } from 'lucide-react';
 import { getAllProjects } from '@/lib/projects';
@@ -52,11 +53,11 @@ export default function Home() {
             <Link key={project.slug} href={`/proyectos/${project.slug}`} className="group block">
               <article className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                 <div className="lg:col-span-7 relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-border/50">
-                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                   <img
+                   <Image
                     src={project.imagen_portada}
                     alt={`Portada del proyecto ${project.titulo}`}
-                    className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   {project.datos_sinteticos && (
                     <div className="absolute top-6 left-6">

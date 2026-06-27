@@ -15,6 +15,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://portfolio-xi-steel-gquxwzv0xy.vercel.app'),
   title: {
     template: '%s | Simón Chiabo',
     default: 'Simón Chiabo | Analista de Datos',

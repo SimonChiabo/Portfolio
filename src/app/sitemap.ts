@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { getAllProjects } from '@/lib/projects';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://simonchiabo.com'; // TODO: Update with real domain later
+  const baseUrl = 'https://portfolio-xi-steel-gquxwzv0xy.vercel.app';
   
   const projects = getAllProjects();
   const projectUrls = projects.map((project) => ({
