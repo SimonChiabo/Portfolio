@@ -30,7 +30,7 @@ export default function ContactoPage() {
         </a>
 
         <a 
-          href="https://linkedin.com/in/simonchiabo" 
+          href="https://www.linkedin.com/in/simon-chiabo-38831776/" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="flex items-center gap-4 p-6 bg-white border border-gray-200 rounded-xl hover:border-[#0A66C2] hover:shadow-md transition-all group"
