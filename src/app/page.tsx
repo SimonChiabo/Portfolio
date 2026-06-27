@@ -21,10 +21,10 @@ export default function Home() {
       {/* Hero Section */}
       <section className="max-w-3xl mb-24">
         <h1 className="text-5xl md:text-7xl font-black tracking-tight mb-6">
-          TODO: Titular principal de posicionamiento
+          Datos que impulsan decisiones estratégicas.
         </h1>
         <p className="text-xl md:text-2xl text-gray-600 mb-10 leading-relaxed">
-          TODO: Subtítulo que explique qué hacés y para quién, en 1 o 2 líneas.
+          Soy Simón Chiabo. Combino mi base en ciencias económicas con análisis avanzado y automatización para descubrir valor oculto y optimizar negocios.
         </p>
         <div className="flex gap-4 flex-wrap">
           <Link href="/proyectos" className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-black text-white font-medium rounded-lg hover:bg-gray-800 transition-colors">
