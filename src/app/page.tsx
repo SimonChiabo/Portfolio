@@ -1,6 +1,16 @@
 import Link from 'next/link';
+import { Metadata } from 'next';
 import { ArrowRight } from 'lucide-react';
 import { getAllProjects } from '@/lib/projects';
+
+export const metadata: Metadata = {
+  openGraph: {
+    images: ['/proyectos/analisis-costos-energia/portada.png'], // TODO: Cambiar por una imagen real tuya o del sitio
+  },
+  twitter: {
+    card: 'summary_large_image',
+  },
+};
 
 export default function Home() {
   const projects = getAllProjects();

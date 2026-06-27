@@ -76,11 +76,7 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
                 <FaGithub size={18} /> Ver Repositorio
               </a>
             )}
-            {frontmatter.notebook_url && (
-              <a href={frontmatter.notebook_url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 bg-white text-black border border-gray-300 text-sm font-medium rounded-lg hover:bg-gray-50 transition-colors">
-                <FileText size={18} /> Ver Notebook
-              </a>
-            )}
+
           </div>
         </div>
       </header>

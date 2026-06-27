@@ -3,8 +3,14 @@ import { getAllProjects } from '@/lib/projects';
 import ProjectCard from '@/components/ProjectCard';
 
 export const metadata: Metadata = {
-  title: 'Proyectos | Simón',
-  description: 'Proyectos y casos de estudio de análisis de datos.',
+  title: 'Proyectos',
+  description: 'Casos de estudio detallados donde aplico análisis de datos para resolver problemas de negocio reales.',
+  openGraph: {
+    images: ['/proyectos/analisis-costos-energia/portada.png'], // TODO: Cambiar por imagen real
+  },
+  twitter: {
+    card: 'summary_large_image',
+  },
 };
 
 export default function ProyectosPage() {

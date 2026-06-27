@@ -17,7 +17,7 @@ export default function ContactoPage() {
       
       <div className="flex flex-col gap-6">
         <a 
-          href="mailto:TODO@example.com" 
+          href="mailto:simonchiabo@gmail.com" 
           className="flex items-center gap-4 p-6 bg-white border border-gray-200 rounded-xl hover:border-black hover:shadow-md transition-all group"
         >
           <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center group-hover:bg-black group-hover:text-white transition-colors">
@@ -25,12 +25,12 @@ export default function ContactoPage() {
           </div>
           <div>
             <h2 className="text-lg font-bold">Email</h2>
-            <p className="text-gray-600">TODO@example.com</p>
+            <p className="text-gray-600">simonchiabo@gmail.com</p>
           </div>
         </a>
 
         <a 
-          href="https://linkedin.com/in/TODO" 
+          href="https://linkedin.com/in/simonchiabo" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="flex items-center gap-4 p-6 bg-white border border-gray-200 rounded-xl hover:border-[#0A66C2] hover:shadow-md transition-all group"
@@ -45,7 +45,7 @@ export default function ContactoPage() {
         </a>
 
         <a 
-          href="https://github.com/TODO" 
+          href="https://github.com/SimonChiabo" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="flex items-center gap-4 p-6 bg-white border border-gray-200 rounded-xl hover:border-black hover:shadow-md transition-all group"

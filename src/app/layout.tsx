@@ -7,8 +7,11 @@ import Footer from '@/components/Footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Simón | Portfolio',
-  description: 'Portfolio profesional de Simón',
+  title: {
+    template: '%s | Simón Chiabo',
+    default: 'Simón Chiabo | Analista de Datos',
+  },
+  description: 'Portfolio profesional de Simón Chiabo, enfocado en análisis de datos, automatización y Machine Learning.',
 };
 
 export default function RootLayout({

@@ -10,13 +10,13 @@ export default function Footer() {
           © {new Date().getFullYear()} Simón. Todos los derechos reservados.
         </div>
         <div className="flex items-center gap-4 text-gray-400">
-          <a href="#" className="hover:text-black transition-colors" aria-label="LinkedIn">
+          <a href="https://linkedin.com/in/simonchiabo" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors" aria-label="LinkedIn">
             <FaLinkedin size={20} />
           </a>
-          <a href="#" className="hover:text-black transition-colors" aria-label="GitHub">
+          <a href="https://github.com/SimonChiabo" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors" aria-label="GitHub">
             <FaGithub size={20} />
           </a>
-          <a href="mailto:TODO@example.com" className="hover:text-black transition-colors" aria-label="Email">
+          <a href="mailto:simonchiabo@gmail.com" className="hover:text-black transition-colors" aria-label="Email">
             <Mail size={20} />
           </a>
         </div>
